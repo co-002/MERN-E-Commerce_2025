@@ -1,9 +1,11 @@
 import mongoose from "mongoose";
+import dotenv from "dotenv";
+dotenv.config();
 
 const connectDb = async () => {
   try {
     await mongoose.connect(
-      "mongodb+srv://aniketypandit99:K40t9sEJTY4vshMv@e-commerce-project.sqtnv.mongodb.net/",
+      process.env.MONGODB_URI,
       {
         dbName: "MERN_E-Commerce",
       }
