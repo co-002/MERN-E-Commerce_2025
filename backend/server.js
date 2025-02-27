@@ -43,11 +43,6 @@ app.use("/api/address", addressRouter);
 // Payment router
 app.use("/api/payment", paymentRouter);
 
-app.use(express.static(path.join(_dirname, "/frontend/dist")));
-app.get("*", (req, res) => {
-  res.sendFile(path.resolve(_dirname, "frontend", "dist", "index.html"));
-});
-
 app.listen(port, () => {
   // console.log("Server is running on port " + port);
 });
