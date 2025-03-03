@@ -5,7 +5,7 @@ import { ToastContainer, toast, Bounce } from "react-toastify";
 
 function AppState(props) {
   // const url = "http://localhost:3000/api";
-  const url = "https://myecommerce-2025-backend.onrender.com/api";
+  const url = "https://mern-e-commerce-2025.onrender.com/api";
   const [products, setProducts] = useState([]);
   const [token, setToken] = useState("");
   const [isAuthenticated, setIsAuthenticated] = useState(false);
@@ -14,7 +14,6 @@ function AppState(props) {
   const [cart, setCart] = useState([]);
   const [userAddress, setUserAddress] = useState([]);
   const [userOrder, setUserOrder] = useState([]);
-
 
   useEffect(() => {
     const fetchProduct = async () => {
@@ -296,7 +295,7 @@ function AppState(props) {
         clearCart,
         shippingAddress,
         userAddress,
-        userOrder
+        userOrder,
       }}
     >
       {props.children}
