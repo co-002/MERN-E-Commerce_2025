@@ -8,7 +8,7 @@ function ProductDetail() {
   const { products, filteredData, addToCart } = useContext(AppContext);
   const { id } = useParams();
   const [product, setProduct] = useState({});
-  const url = "http://localhost:3000/api";
+  const url = "https://mern-e-commerce-2025.onrender.com/api";
   useEffect(() => {
     const fetchProduct = async () => {
       const api = await axios.get(`${url}/product/${id}`, {
