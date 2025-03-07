@@ -4,7 +4,6 @@ import axios from "axios";
 import { ToastContainer, toast, Bounce } from "react-toastify";
 
 function AppState(props) {
-  // const url = "https://mern-e-commerce-2025.onrender.com/api";
   const url = "https://mern-e-commerce-2025.onrender.com/api";
 
   const [products, setProducts] = useState([]);

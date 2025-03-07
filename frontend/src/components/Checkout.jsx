@@ -76,7 +76,6 @@ function Checkout() {
             navigate("/orderConfirm");
           }
         },
-        // callback_url: "https://mern-e-commerce-2025.onrender.com/payment-success",
         prefill: {
           name: "MERN_E-Commerce",
           email: "aniket@gmail.com",
