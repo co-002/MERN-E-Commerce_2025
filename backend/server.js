@@ -17,7 +17,7 @@ const port = process.env.PORT || 3000;
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://mern-e-commerce-2025-1.onrender.com",
+    origin: "",
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
